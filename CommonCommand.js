@@ -1,4 +1,4 @@
-let command = "elegir azul".toLowerCase(); //Convierte en minusculas la entrada
+let command = "elegir".toLowerCase(); //Convierte en minusculas la entrada
 const ARGS = command.trim().split(/ +/g); //Quita espacios y separa la entrada en un array y la guarda en la constante ARGS
 if (ARGS[0] == "elegir") {
   if (ARGS[1]) {
@@ -11,6 +11,9 @@ if (ARGS[0] == "elegir") {
           break;
         case "azul":
           console.log("azul");
+          break;
+        default:
+          console.log("No existe");
       }
     } catch (err) {
       console.log("Error in command");
